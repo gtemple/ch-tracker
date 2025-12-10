@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Rust / Cargo (Tauri backend)
+src-tauri/target/
+**/target/
+
+# Tauri build outputs (sometimes appear depending on tooling)
+src-tauri/gen/
+src-tauri/.tauri/
+
+# Local app data / databases (if you create sqlite + store files during dev)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.jsonl
+
+# Tauri Store plugin (if you keep it in repo root during dev)
+**/settings.json
+
+# Windows cruft
+Thumbs.db
+Desktop.ini
+
+# Environment files
+.env
+.env.*
